@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+    background-color: chartreuse;
+}
+.contenedor  {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header header header"
+    "contenido contenido lateral"
+    "cositas1 cositas1 cositas2"
+    "footer footer footer";
+    grid-gap: 10px;
+  background-color: rgb(31, 131, 131);
+  color: aliceblue;
+}
+.contenedor .comun{
+    border-radius: 5px;
+}
+.contenedor .encabezado{
+    grid-area: header;
+    background-color: black;
+}
+.contenedor .principal{
+    background-color: rgb(109, 100, 86);
+    grid-area: contenido;
+    
+   
+}
+.contenedor .lateral{
+    background-color: coral;
+    grid-area: lateral;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.contenedor .comun{
+    /*background-color: rgb(37, 37, 170);*/
+}
+.contenedor .wid1{
+    background-color: darkorchid;
+    grid-area: cositas1;
+}
+.contenedor .wid2{
+    background-color: blueviolet;
+    grid-area: cositas2;
+}
+.contenedor .footer{
+    background-color: black;
+    grid-area: footer;
+}

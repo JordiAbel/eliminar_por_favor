@@ -1,0 +1,28 @@
+div h1 {
+  color: bisque;
+  text-shadow: 1px 1px 1px black;
+  background-color: aqua;
+}
+div {
+  padding: 10px;
+  border: 3px solid rgb(34, 34, 5);
+  width: 50%;
+  height: 100px;
+  overflow: auto;
+  margin: auto;
+}
+div.coloress:nth-child(2n+2){background-color: aqua;
+
+}
+div.coloress:nth-child(odd){
+  background-color: black;
+}
+h1:hover {
+  background-color: black;
+  
+}
+h1.visible:hover {
+  visibility: visible;
+  opacity: 0.1;
+  transition: opacity 2s linear;
+}

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(39, 127, 204);
+  color: rgb(29, 37, 37);
+}
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+}
+.contenedor > .comunes {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 4px;
+}
+.contenedor .header {
+  background-color: rgb(27, 27, 99);
+  color: aliceblue;
+  grid-column: 1 / 4;
+}
+.contenedor .contenido {
+  grid-column: span 2;
+}
+.contenedor .sidebar {
+    min-height: 100px;
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+  background-color: rgb(252, 185, 2);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor .widget-1,
+.contenedor .widget-2 {
+  background-color: rgb(90, 223, 223);
+  color: aliceblue;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor .footer {
+  background-color: rgb(27, 27, 99);
+  grid-column: 1 / 4;
+}
+@media only screen and (max-width: 768px) {
+    .contenedor .contenido{
+        grid-column: 1 / -1;
+    }
+    .contenedor .sidebar{
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+    .contenedor .widget-1{
+       grid-column: span 2;
+    }
+}

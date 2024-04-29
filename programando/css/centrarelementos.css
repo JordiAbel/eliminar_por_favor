@@ -1,0 +1,40 @@
+h1{
+  text-align: center;
+  color: red;
+
+}
+div.contenedor{
+  width: 30%;
+  height: 20%;
+  margin: auto;
+  border: 3px solid rgb(107, 157, 190);
+  padding: 15px;
+  color: rgb(15, 155, 155);
+  text-align: center;
+}
+div.contenedor:hover{
+  background-color: rgb(26, 136, 233);
+  color: rgb(236, 47, 179);
+}
+div.contenedor.oculto p{
+  display: none;
+}
+div.contenedor.oculto:hover p{
+  display: block;
+  background-color: rgb(190, 211, 230);
+  color: aliceblue;
+  padding: 15px;
+}
+div.contenedor.primero p:first-child{
+  font-variant: small-caps;
+}
+p::selection{
+  background-color: aqua;
+}
+p::first-letter{
+  font-size: 1.5em;
+  color: brown;
+}
+p::after{
+  content: " ajaaaa ";
+}
